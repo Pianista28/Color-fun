@@ -93,13 +93,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/points"
-        app:layout_constraintRight_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/pointsTextView"
         android:layout_marginRight="2dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/pointsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_0"
@@ -107,6 +107,26 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/recordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintRight_toLeftOf="@+id/recordPointsView"
+        android:layout_marginRight="1dp" />
+
+    <TextView
+        android:id="@+id/recordPointsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pointsTextView" />
 
 
 </android.support.constraint.ConstraintLayout>

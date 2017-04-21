@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">ColorsGame</string>
+    <string name="app_name">Color Fun</string>
     <string name="start">START!</string>
     <string name="points">Points:</string>
     <string name="_0">0</string>
+    <string name="yellow">YELLOW</string>
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="lose">You Lose</string>
+    <string name="record">Record:</string>
 </resources>
