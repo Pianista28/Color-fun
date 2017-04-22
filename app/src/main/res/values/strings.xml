@@ -7,6 +7,8 @@
     <string name="red">RED</string>
     <string name="blue">BLUE</string>
     <string name="green">GREEN</string>
-    <string name="lose">You Lose</string>
+    <string name="lose">OH...</string>
     <string name="record">Record:</string>
+    <string name="how_to_play">How to play</string>
+    <string name="how_to_play_message">Click the button as the text says, not as the color hints</string>
 </resources>

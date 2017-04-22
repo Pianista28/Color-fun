@@ -63,10 +63,11 @@ public class GameActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        restoreData();
         points = 0;
         correctButton = -1;
         pointsText.setText(String.valueOf(points));
-        Toast.makeText(getApplicationContext(),"resume", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"resume", Toast.LENGTH_SHORT).show();
         startTurn();
     }
 
@@ -93,7 +94,7 @@ public class GameActivity extends AppCompatActivity {
         cdt.cancel();
         if(points > record){
             record = points;
-            saveData(record);
+            saveData();
         }
         setAlertDialog();
     }
@@ -147,7 +148,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
-    private void saveData(int record){
+    private void saveData(){
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt(RECORD, record);
         editor.apply();
@@ -222,7 +223,7 @@ public class GameActivity extends AppCompatActivity {
     public void setAlertDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.lose);
-        builder.setMessage("Points:" + String.valueOf(points));
+        builder.setMessage("Points:" + String.valueOf(points) + "\nRecord: " + String.valueOf(record));
         builder.setPositiveButton("Play again!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
