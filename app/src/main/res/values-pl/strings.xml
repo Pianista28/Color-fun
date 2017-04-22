@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Color Fun</string>
+    <string name="app_name">Colorful Reaction</string>
     <string name="blue">NIEBIESKI</string>
     <string name="green">ZIELONY</string>
     <string name="how_to_play">Jak grać</string>
@@ -12,4 +12,5 @@
     <string name="red">CZERWONY</string>
     <string name="start">START!</string>
     <string name="yellow">ŻÓŁTY</string>
+    <string name="rate">Oceń Aplikację</string>
 </resources>

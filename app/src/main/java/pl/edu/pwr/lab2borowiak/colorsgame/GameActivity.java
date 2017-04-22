@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,7 @@ public class GameActivity extends AppCompatActivity {
     int points;
     int record;
     int correctButton;
+    boolean musicOnOff;
 
 
     @Override
@@ -48,6 +50,7 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         ButterKnife.bind(this);
         preferences = getSharedPreferences(PREFERANCES_NAME, Activity.MODE_PRIVATE);
+        musicOnOff = getIntent().getBooleanExtra(MainActivity.musicOnOff, true);
 
         setArrayColors();
         setArrayColorsNames();
@@ -92,11 +95,15 @@ public class GameActivity extends AppCompatActivity {
 
     public void onLose(){
         cdt.cancel();
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.chinese_gong_daniel_simon);
         if(points > record){
             record = points;
             saveData();
         }
+        if(musicOnOff)
+            mediaPlayer.start();
         setAlertDialog();
+
     }
 
 
@@ -248,7 +255,8 @@ public class GameActivity extends AppCompatActivity {
                 Intent it = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(it);
             }
-        });
+        }
+        );
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.show();
     }

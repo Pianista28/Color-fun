@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "274486937936",
+    "firebase_url": "https://colorsgame-78947.firebaseio.com",
+    "project_id": "colorsgame-78947",
+    "storage_bucket": "colorsgame-78947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274486937936:android:f25d798755a9b961",
+        "android_client_info": {
+          "package_name": "pl.edu.pwr.lab2borowiak.colorsgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274486937936-1nqipdr6uohi7phdipa42adgmljneq0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pl.edu.pwr.lab2borowiak.colorsgame",
+            "certificate_hash": "f4d59805d292c7055bfe95a0ae3c9da5ae173a2e"
+          }
+        },
+        {
+          "client_id": "274486937936-d8odbc695hvrmlvchbeep7uodbl81tqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfsvohOuuWxKnjCgye2RWWA5aQPN9IiFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274486937936-d8odbc695hvrmlvchbeep7uodbl81tqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

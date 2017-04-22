@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Color Fun</string>
+    <string name="app_name">Colorful Reaction</string>
     <string name="start">START!</string>
     <string name="points">Points:</string>
-    <string name="_0">0</string>
+    <string name="_0" translatable="false">0</string>
     <string name="yellow">YELLOW</string>
     <string name="red">RED</string>
     <string name="blue">BLUE</string>
@@ -11,4 +11,5 @@
     <string name="record">Record:</string>
     <string name="how_to_play">How to play</string>
     <string name="how_to_play_message">Click the button as the text says, not as the color hints</string>
+    <string name="rate">Rate</string>
 </resources>
